@@ -23,7 +23,7 @@ export default function ProjectCard({ title, slug, description, image, featured 
         <h3 className={`font-serif mb-3 ${featured ? 'text-3xl' : 'text-2xl'}`} data-testid={`text-project-title-${slug}`}>
           {title}
         </h3>
-        <p className="text-muted-foreground font-light leading-relaxed line-clamp-3" data-testid={`text-project-description-${slug}`}>
+        <p className="line-clamp-3" data-testid={`text-project-description-${slug}`}>
           {description}
         </p>
       </div>

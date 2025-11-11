@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <h3 className="text-2xl font-serif font-medium mb-4">Word and Page</h3>
-            <p className="text-muted-foreground font-light text-sm leading-relaxed">
+            <p className="metadata">
               Editorial services and book making for art and culture publications.
             </p>
           </div>
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t text-center">
-          <p className="text-sm text-muted-foreground font-light">
+          <p className="metadata">
             © {currentYear} Word and Page. All rights reserved.
           </p>
         </div>

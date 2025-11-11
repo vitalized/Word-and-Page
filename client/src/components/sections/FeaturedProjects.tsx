@@ -26,7 +26,7 @@ export default function FeaturedProjects() {
           <h2 className="featured" data-testid="text-recent-projects">
             Recent Projects
           </h2>
-          <p className="text-lg text-muted-foreground font-light max-w-2xl mx-auto">
+          <p className="section-description max-w-2xl mx-auto">
             A selection of editorial work spanning magazines, books, and cultural publications.
           </p>
         </div>

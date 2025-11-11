@@ -20,7 +20,7 @@ export default function InstagramGrid() {
         <h1 data-testid="text-instagram-title">
           Instagram
         </h1>
-        <p className="text-xl text-muted-foreground font-light mb-8 max-w-3xl mx-auto">
+        <p className="section-description max-w-3xl mx-auto">
           Behind the scenes glimpses of editorial projects, book production, and the art of publishing.
         </p>
         <a

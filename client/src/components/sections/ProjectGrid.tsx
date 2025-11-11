@@ -55,13 +55,13 @@ export default function ProjectGrid() {
                 <h2 className="project-title" data-testid={`text-project-title-${project.id}`}>
                   {project.title}
                 </h2>
-                <p className="text-secondary font-light uppercase tracking-wider text-sm" data-testid={`text-project-subtitle-${project.id}`}>
+                <p className="caption text-secondary" data-testid={`text-project-subtitle-${project.id}`}>
                   {project.subtitle}
                 </p>
               </div>
               <div className="prose prose-lg max-w-none">
                 {project.description.split('\n\n').map((paragraph, i) => (
-                  <p key={i} className="text-muted-foreground font-light leading-relaxed mb-6" data-testid={`text-project-description-${project.id}-${i}`}>
+                  <p key={i} data-testid={`text-project-description-${project.id}-${i}`}>
                     {paragraph}
                   </p>
                 ))}
@@ -71,7 +71,7 @@ export default function ProjectGrid() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-primary hover:underline font-light"
+                  className="link-arrow inline-block"
                   data-testid={`link-project-${project.id}`}
                 >
                   Visit website →

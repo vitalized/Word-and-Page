@@ -11,7 +11,7 @@ export default function HeroSection() {
           <br />
           based in London
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground font-light mb-12 leading-relaxed max-w-3xl mx-auto" data-testid="text-hero-subtitle">
+        <p className="hero-subtitle max-w-3xl mx-auto" data-testid="text-hero-subtitle">
           Over 10 years' experience working in editorial positions and creating printed matter within art and culture.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

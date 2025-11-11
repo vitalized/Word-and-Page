@@ -7,7 +7,7 @@ export default function CallToAction() {
       <h2 className="cta" data-testid="text-cta-title">
         Ready to start a project?
       </h2>
-      <p className="text-lg text-muted-foreground font-light mb-8 max-w-2xl mx-auto">
+      <p className="section-description max-w-2xl mx-auto">
         I'm available for commissions and collaborations. Let's discuss how I can help bring your editorial project to life.
       </p>
       <Link href="/contact">

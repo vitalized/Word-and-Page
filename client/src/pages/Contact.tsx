@@ -9,7 +9,7 @@ export default function Contact() {
           <h1 data-testid="text-contact-title">
             Contact
           </h1>
-          <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto">
+          <p className="section-description max-w-3xl mx-auto">
             Available for commissions and collaborations. Get in touch to discuss your editorial project.
           </p>
         </div>
@@ -28,7 +28,7 @@ export default function Contact() {
                   <MapPin className="h-5 w-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium">Location</h3>
-                    <p className="text-muted-foreground font-light">
+                    <p>
                       London, United Kingdom
                     </p>
                   </div>
@@ -40,7 +40,6 @@ export default function Contact() {
                     <h3 className="font-medium">Email</h3>
                     <a
                       href="mailto:hello@wordandpage.com"
-                      className="text-muted-foreground font-light hover:text-foreground transition-colors"
                       data-testid="link-email"
                     >
                       hello@wordandpage.com
@@ -66,7 +65,7 @@ export default function Contact() {
 
             <div className="bg-muted/30 rounded-lg p-6">
               <h3 className="font-medium">Response Time</h3>
-              <p className="text-sm text-muted-foreground font-light">
+              <p className="metadata">
                 I typically respond to inquiries within 24-48 hours during business days.
               </p>
             </div>

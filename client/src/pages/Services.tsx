@@ -10,7 +10,7 @@ export default function Services() {
           <h1 data-testid="text-services-title">
             Services
           </h1>
-          <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto">
+          <p className="section-description max-w-3xl mx-auto">
             Professional editorial services for art and culture publications, from copy editing to full production management.
           </p>
         </div>

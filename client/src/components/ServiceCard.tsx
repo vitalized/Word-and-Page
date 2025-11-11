@@ -16,7 +16,7 @@ export default function ServiceCard({ icon: Icon, title, description }: ServiceC
       <h3 className="text-2xl font-serif mb-4" data-testid={`text-service-title-${title.toLowerCase().replace(/\s+/g, '-')}`}>
         {title}
       </h3>
-      <p className="text-muted-foreground font-light leading-relaxed" data-testid={`text-service-description-${title.toLowerCase().replace(/\s+/g, '-')}`}>
+      <p data-testid={`text-service-description-${title.toLowerCase().replace(/\s+/g, '-')}`}>
         {description}
       </p>
     </Card>

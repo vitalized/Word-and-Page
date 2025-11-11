@@ -33,12 +33,12 @@ export default function SeniorPositions() {
         {positions.map((position) => (
           <div key={position.testId} className="grid grid-cols-1 md:grid-cols-4 gap-6" data-testid={`section-position-${position.testId}`}>
             <div className="md:col-span-1">
-              <p className="text-sm uppercase tracking-wider text-muted-foreground font-medium">{position.period}</p>
+              <p className="caption">{position.period}</p>
             </div>
             <div className="md:col-span-3">
               <h3>{position.title}</h3>
-              <p className="text-secondary mb-2">{position.organization}</p>
-              <p className="text-muted-foreground font-light text-sm">{position.location}</p>
+              <p className="organization">{position.organization}</p>
+              <p className="metadata">{position.location}</p>
             </div>
           </div>
         ))}

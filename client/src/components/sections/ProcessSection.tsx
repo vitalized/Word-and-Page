@@ -16,7 +16,7 @@ export default function ProcessSection() {
           <div key={step.number} data-testid={`section-process-${step.number}`}>
             <div className="text-5xl font-serif text-secondary mb-4">{step.number}</div>
             <h3 className="process-title">{step.title}</h3>
-            <p className="text-muted-foreground font-light leading-relaxed">{step.description}</p>
+            <p>{step.description}</p>
           </div>
         ))}
       </div>

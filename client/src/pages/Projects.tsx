@@ -8,7 +8,7 @@ export default function Projects() {
           <h1 data-testid="text-projects-title">
             Projects
           </h1>
-          <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto">
+          <p className="section-description max-w-3xl mx-auto">
             A comprehensive portfolio of editorial work across magazines, books, and cultural publications.
           </p>
         </div>
