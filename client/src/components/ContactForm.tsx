@@ -4,6 +4,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
+import { useMutation } from '@tanstack/react-query';
+import { apiRequest } from '@/lib/queryClient';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -11,23 +13,31 @@ export default function ContactForm() {
     email: '',
     message: '',
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    console.log('Form submitted:', formData);
-
-    setTimeout(() => {
+  const submitContactMutation = useMutation({
+    mutationFn: async (data: typeof formData) => {
+      return apiRequest('POST', '/api/contact', data);
+    },
+    onSuccess: () => {
       toast({
         title: 'Message sent!',
         description: "Thank you for your inquiry. I'll get back to you soon.",
       });
       setFormData({ name: '', email: '', message: '' });
-      setIsSubmitting(false);
-    }, 1000);
+    },
+    onError: (error: any) => {
+      toast({
+        title: 'Error sending message',
+        description: error.message || 'Please try again later.',
+        variant: 'destructive',
+      });
+    },
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    submitContactMutation.mutate(formData);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -88,11 +98,11 @@ export default function ContactForm() {
 
       <Button
         type="submit"
-        disabled={isSubmitting}
+        disabled={submitContactMutation.isPending}
         className="w-full md:w-auto px-12"
         data-testid="button-submit"
       >
-        {isSubmitting ? 'Sending...' : 'Send Message'}
+        {submitContactMutation.isPending ? 'Sending...' : 'Send Message'}
       </Button>
     </form>
   );
