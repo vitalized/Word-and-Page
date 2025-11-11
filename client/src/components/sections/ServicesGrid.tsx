@@ -1,4 +1,4 @@
-import ServiceCard from '@/components/ServiceCard';
+import { Card } from '@/components/ui/card';
 import { Edit3, FileText, CheckCircle2, BookOpen, Layout, Users } from 'lucide-react';
 
 const services = [
@@ -37,9 +37,24 @@ const services = [
 export default function ServicesGrid() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
-      {services.map((service) => (
-        <ServiceCard key={service.title} {...service} />
-      ))}
+      {services.map((service) => {
+        const Icon = service.icon;
+        const testId = service.title.toLowerCase().replace(/\s+/g, '-');
+        
+        return (
+          <Card key={service.title} className="p-8 hover-elevate transition-all duration-300" data-testid={`card-service-${testId}`}>
+            <div className="mb-6">
+              <Icon className="h-10 w-10 text-secondary" />
+            </div>
+            <h3 className="text-2xl font-serif mb-4" data-testid={`text-service-title-${testId}`}>
+              {service.title}
+            </h3>
+            <p data-testid={`text-service-description-${testId}`}>
+              {service.description}
+            </p>
+          </Card>
+        );
+      })}
     </div>
   );
 }
