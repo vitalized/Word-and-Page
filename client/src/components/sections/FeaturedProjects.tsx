@@ -1,6 +1,5 @@
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
-import ProjectCard from '@/components/ProjectCard';
 import { ArrowRight } from 'lucide-react';
 
 const featuredProjects = [
@@ -33,7 +32,24 @@ export default function FeaturedProjects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           {featuredProjects.map((project) => (
-            <ProjectCard key={project.slug} {...project} featured />
+            <Link key={project.slug} href={`/projects#${project.slug}`} data-testid={`link-project-${project.slug}`}>
+              <div className="group cursor-pointer">
+                <div className="relative aspect-[3/2] overflow-hidden rounded-lg mb-6">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-testid={`img-project-${project.slug}`}
+                  />
+                </div>
+                <h3 className="font-serif mb-3 text-3xl" data-testid={`text-project-title-${project.slug}`}>
+                  {project.title}
+                </h3>
+                <p className="line-clamp-3" data-testid={`text-project-description-${project.slug}`}>
+                  {project.description}
+                </p>
+              </div>
+            </Link>
           ))}
         </div>
 
