@@ -1,3 +1,5 @@
+import profileImage from '@assets/poppy_1762858273395.webp';
+
 export default function About() {
   return (
     <div className="py-24 px-4">
@@ -12,7 +14,7 @@ export default function About() {
           <div className="lg:col-span-2">
             <div className="aspect-[3/4] overflow-hidden rounded-lg">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop"
+                src={profileImage}
                 alt="Poppy - Editor and Bookmaker"
                 className="w-full h-full object-cover"
                 data-testid="img-about-portrait"
