@@ -31,7 +31,7 @@ const editorialWork = [
 export default function EditorialWork() {
   return (
     <div>
-      <h2 className="text-3xl font-serif font-medium mb-12 text-center" data-testid="text-editorial-work-title">
+      <h2 className="text-center" data-testid="text-editorial-work-title">
         Editorial Work
       </h2>
 

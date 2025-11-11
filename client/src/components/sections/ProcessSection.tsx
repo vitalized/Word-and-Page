@@ -8,14 +8,14 @@ const steps = [
 export default function ProcessSection() {
   return (
     <section className="mt-24">
-      <h2 className="text-3xl font-serif font-medium mb-12 text-center" data-testid="text-process-title">
+      <h2 className="text-center" data-testid="text-process-title">
         Process
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {steps.map((step) => (
           <div key={step.number} data-testid={`section-process-${step.number}`}>
             <div className="text-5xl font-serif text-secondary mb-4">{step.number}</div>
-            <h3 className="text-xl font-serif mb-3">{step.title}</h3>
+            <h3 className="process-title">{step.title}</h3>
             <p className="text-muted-foreground font-light leading-relaxed">{step.description}</p>
           </div>
         ))}

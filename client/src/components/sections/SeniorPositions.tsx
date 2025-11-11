@@ -25,7 +25,7 @@ const positions = [
 export default function SeniorPositions() {
   return (
     <div>
-      <h2 className="text-3xl font-serif font-medium mb-12 text-center" data-testid="text-senior-positions-title">
+      <h2 className="text-center" data-testid="text-senior-positions-title">
         Senior Positions
       </h2>
 
@@ -36,7 +36,7 @@ export default function SeniorPositions() {
               <p className="text-sm uppercase tracking-wider text-muted-foreground font-medium">{position.period}</p>
             </div>
             <div className="md:col-span-3">
-              <h3 className="text-2xl font-serif mb-2">{position.title}</h3>
+              <h3>{position.title}</h3>
               <p className="text-secondary mb-2">{position.organization}</p>
               <p className="text-muted-foreground font-light text-sm">{position.location}</p>
             </div>

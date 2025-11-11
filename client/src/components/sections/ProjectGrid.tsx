@@ -52,7 +52,7 @@ export default function ProjectGrid() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
               <div>
-                <h2 className="text-4xl font-serif font-medium mb-3" data-testid={`text-project-title-${project.id}`}>
+                <h2 className="project-title" data-testid={`text-project-title-${project.id}`}>
                   {project.title}
                 </h2>
                 <p className="text-secondary font-light uppercase tracking-wider text-sm" data-testid={`text-project-subtitle-${project.id}`}>

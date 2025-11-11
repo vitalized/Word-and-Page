@@ -7,7 +7,7 @@ export default function About() {
     <div className="py-24 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="mb-24 text-center">
-          <h1 className="text-5xl md:text-6xl font-serif font-medium mb-6" data-testid="text-about-title">
+          <h1 data-testid="text-about-title">
             About
           </h1>
         </div>

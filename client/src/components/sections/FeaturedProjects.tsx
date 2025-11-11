@@ -23,7 +23,7 @@ export default function FeaturedProjects() {
     <section className="py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6" data-testid="text-recent-projects">
+          <h2 className="featured" data-testid="text-recent-projects">
             Recent Projects
           </h2>
           <p className="text-lg text-muted-foreground font-light max-w-2xl mx-auto">

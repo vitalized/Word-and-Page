@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 export default function CallToAction() {
   return (
     <section className="bg-muted/30 rounded-lg p-12 md:p-16 text-center">
-      <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6" data-testid="text-cta-title">
+      <h2 className="cta" data-testid="text-cta-title">
         Ready to start a project?
       </h2>
       <p className="text-lg text-muted-foreground font-light mb-8 max-w-2xl mx-auto">

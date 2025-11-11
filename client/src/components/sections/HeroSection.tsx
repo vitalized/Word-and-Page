@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-24">
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-5xl md:text-7xl font-serif font-medium mb-8 leading-tight" data-testid="text-hero-title">
+        <h1 className="hero" data-testid="text-hero-title">
           Editor and Bookmaker
           <br />
           based in London
