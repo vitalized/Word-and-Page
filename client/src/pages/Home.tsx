@@ -9,13 +9,13 @@ export default function Home() {
       title: 'TANK',
       slug: 'tank',
       description: 'As managing editor, I ran the production of the print magazine, contributed written articles, and managed the televisualisation of the magazine for TANKtv.',
-      image: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=1200&h=800&fit=crop',
+      image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1660642438368-51SN3GUJX7PCTTMC7ADX/IMG_4490_edited2.jpg',
     },
     {
       title: 'Michael Asher Foundation',
       slug: 'michael-asher',
       description: 'I began working with Michael Asher Foundation (Los Angeles) on their first book project in 2018. Public Knowledge (MIT Press, 2020) was an ambitious publication.',
-      image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&h=800&fit=crop',
+      image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1646741727859-Y1UMTCW5WBZELCQI905Y/IMG_4266_edited.jpg',
     },
   ];
 

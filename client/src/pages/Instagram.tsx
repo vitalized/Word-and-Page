@@ -3,15 +3,15 @@ import { Button } from '@/components/ui/button';
 
 export default function Instagram() {
   const posts = [
-    { id: 1, image: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=600&h=600&fit=crop' },
-    { id: 2, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&h=600&fit=crop' },
-    { id: 3, image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=600&fit=crop' },
-    { id: 4, image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=600&fit=crop' },
-    { id: 5, image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&h=600&fit=crop' },
-    { id: 6, image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=600&fit=crop' },
-    { id: 7, image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=600&fit=crop' },
-    { id: 8, image: 'https://images.unsplash.com/photo-1516414447565-b14be0adf13e?w=600&h=600&fit=crop' },
-    { id: 9, image: 'https://images.unsplash.com/photo-1491841573634-28140fc7ced7?w=600&h=600&fit=crop' },
+    { id: 1, image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1660642438368-51SN3GUJX7PCTTMC7ADX/IMG_4490_edited2.jpg' },
+    { id: 2, image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1646741727859-Y1UMTCW5WBZELCQI905Y/IMG_4266_edited.jpg' },
+    { id: 3, image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1646742828451-4U3WWU62NEVHUJKG7XVJ/IMG_4449_2000px.jpg' },
+    { id: 4, image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1660642800735-GZ0CUHFV2J4DVE5Z9NEO/IMG_2920_editcrop.jpg' },
+    { id: 5, image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1646742060938-UYXM6W9Q02PIM98TDL1V/IMG_4344_2000px.jpg' },
+    { id: 6, image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1646742928704-5MANI66U2BX1EAQGX3R6/IMG_4367_2000px.jpg' },
+    { id: 7, image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1646743030973-ZW5IE6X9T12RHU4YORXF/Variety_2000px.jpg' },
+    { id: 8, image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1646742781644-WPA66U4FFS9REZ461QSN/IMG_4404_2000px.jpg' },
+    { id: 9, image: 'https://images.squarespace-cdn.com/content/v1/621ce3487a0ce3771b6c490c/1646743108332-I1CXDWHLKI7T3L075TGE/IMG_4398_2000px.jpg' },
   ];
 
   return (
